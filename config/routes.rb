@@ -8,8 +8,9 @@ Rails.application.routes.draw do
 
     resources :posts
   end
-  nemespace :accout do
-    resources :groups
+  namespace :account do
+      resources :groups
+      resources :posts
   end
   root 'groups#index'
 end
